@@ -1,6 +1,11 @@
 ---
-layout: default
+layout: base
 ---
+<h1>
+  {% if page.title %}
+    {{ page.title }}
+  {% endif %}
+</h1>
 <p>
   {{ page.date | date_to_string }}
   {% assign author = site.authors | where: 'short_name', page.author | first %}
