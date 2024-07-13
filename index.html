@@ -1,11 +1,27 @@
+---
+layout: default
+my_var: 5
+title: Home
+editor_name: Sunny Chan
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ page.title }}</title>
 </head>
 <body>
-<h1>Hello World</h1>
+<h1> {{ "Hello World" | downcase}}</h1>
 <p>Lol so this is the page. <br> I'm using GitHub Pages. It's working if you can see it</p>
+<p>I've made use of jekyll in this project, and I'm still learning about it.</p>
+<p>So after using "jekyll serve", this webpage is updated immediately after refreshing the browser.</p>
+<h2>This part is about jekyll</h2>
+<p>Front matter can be used to set variable for the page. <br>
+    E.g. I've set a variable named "my_var" as 5. The next line will display the value of the variable. <br>
+    page.my_var: {{ page.my_var }}
+
+</p>
+<p>The editor of this page is {{ page.editor_name }}.</p>
 </body>
 </html>
