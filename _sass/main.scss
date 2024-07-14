@@ -1,3 +1,23 @@
 .current {
   color: green;
 }
+
+.photo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  position: relative;
+  height: 60vh; /* 60% of the viewport height */
+  padding-top: 8vh;
+  padding-bottom: 3vh;
+}
+
+.caption{
+  // padding-top: 5vh;
+  // padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 480;
+  color: #404040;
+  text-align: center
+}

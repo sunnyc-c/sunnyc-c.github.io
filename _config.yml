@@ -39,6 +39,8 @@ social_links:
 collections:
   authors:
     output: true
+  photo_gallery:
+    output: true
 
 defaults:
   - scope:
