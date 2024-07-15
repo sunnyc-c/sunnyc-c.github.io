@@ -4,9 +4,7 @@ title: Photo Gallery
 
 <h1>Photo Gallery - Shang Hai 2024</h1>
 
-<ul>
-  {% for image in site.photo_gallery %}
-    <img src="{{  image.image_path  }}" alt="{{  image.title  }}" class="photo"/>
-    <p class="caption">{{  image.title  }}</p>
-  {% endfor %}
-</ul>
+{% for image in site.photo_gallery %}
+  <img src="{{  image.image_path  }}" alt="{{  image.title  }}" class="photo"/>
+  <p class="caption">{{  image.title  }}</p>
+{% endfor %}
