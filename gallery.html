@@ -2,9 +2,11 @@
 title: Photo Gallery
 ---
 
-<h1>Photo Gallery - Shang Hai 2024</h1>
+<h1>Photo Gallery - Shanghai 2024</h1>
 
 {% for image in site.photo_gallery %}
-  <img src="{{  image.image_path  }}" alt="{{  image.title  }}" class="photo"/>
+  <a href="https://youtu.be/xvFZjo5PgG0?si=xxJ9Q8Sz4YR8tt-t">
+    <img src="{{  image.image_path  }}" alt="{{  image.title  }}" class="photo" />
+  </a>
   <p class="caption">{{  image.title  }}</p>
 {% endfor %}

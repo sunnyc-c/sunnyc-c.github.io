@@ -41,6 +41,8 @@ collections:
     output: true
   photo_gallery:
     output: true
+  support_pages:
+    output: true
 
 defaults:
   - scope:
